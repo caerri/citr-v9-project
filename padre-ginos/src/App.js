@@ -1,18 +1,25 @@
-const Pizza = () => {
+const Pizza = (props) => {
     return React.createElement("div", {}, [
-        React.createElement("h1", {}, "The Pepperoni Pizza"),
-        React.createElement("p", {}, "Mozzarella Cheese, Pepperoni"),
+        React.createElement("h1", {}, props.name),
+        React.createElement("p", {}, props.description),
     ]);
 };
 
 const App = () => {
     return React.createElement("div", {}, [
         React.createElement("h1", {}, "Padre Gino's"),
-        React.createElement(Pizza),
-        React.createElement(Pizza),
-        React.createElement(Pizza),
-        React.createElement(Pizza),
-        React.createElement(Pizza),
+        React.createElement(Pizza, {
+            name: "The Pepperoni Pizza", 
+            description: "Mozzarella, Pepperoni"
+        }),
+        React.createElement(Pizza, {
+            name: "Americano Pizza",
+            description: "Burgers and fries"
+        }),
+        React.createElement(Pizza, {
+            name: "Hawaiian", 
+            description: "Ham and Pineapple"
+        })
     ]);
 };
 

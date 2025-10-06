@@ -1,4 +1,4 @@
-## React Learning Project — *Complete Intro to React, v9*
+# React Learning Project — *Complete Intro to React, v9*
 
 This project was created while following along with Brian Holt’s [**Complete Intro to React, v9**](https://frontendmasters.com/courses/complete-react-v9/) course on Frontend Masters.  
 
